@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".UserProfileFragment">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User Profile"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_gravity="center"/>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/et_age"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Age"
+            android:inputType="number" />
+
+        <RadioGroup
+            android:id="@+id/rg_gender"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_male"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Male" />
+
+            <RadioButton
+                android:id="@+id/rb_female"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Female" />
+
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_weight"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Weight (kg)"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/et_height"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Height (cm)"
+            android:inputType="number" />
+
+        <Spinner
+            android:id="@+id/sp_activity_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:entries="@array/activity_levels" />
+
+        <EditText
+            android:id="@+id/et_dietary_restrictions"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Dietary Restrictions"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/et_goals"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:hint="Goals"
+            android:inputType="text" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Keep Age Private -->
+        <CheckBox
+            android:id="@+id/cb_keep_age_private"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keep Age Private" />
+
+        <!-- Keep Weight Private -->
+        <CheckBox
+            android:id="@+id/cb_keep_weight_private"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keep Weight Private" />
+
+        <!-- Keep Height Private -->
+        <CheckBox
+            android:id="@+id/cb_keep_height_private"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keep Height Private" />
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_marginTop="16dp"
+        android:background="@color/primary"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_gravity="center"/>
+
+</LinearLayout>

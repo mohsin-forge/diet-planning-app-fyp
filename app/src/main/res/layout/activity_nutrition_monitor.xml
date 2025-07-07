@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".nutritionMonitorActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nutrition Monitor"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_below="@+id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+    <EditText
+        android:id="@+id/meal_name"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Meal Name"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/calories"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Calories"
+        android:inputType="number"
+        android:layout_below="@id/meal_name"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/protein"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Protein (g)"
+        android:inputType="number"
+        android:layout_below="@id/calories"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/fat"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Fat (g)"
+        android:inputType="number"
+        android:layout_below="@id/protein"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/carbs"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Carbs (g)"
+        android:inputType="number"
+        android:layout_below="@id/fat"
+        android:layout_marginTop="8dp"
+        android:padding="12dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/add_meal_button"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:text="Add Meal"
+        android:layout_below="@id/carbs"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_button"
+        android:layout_centerHorizontal="true"
+        android:padding="12dp" />
+
+    <TextView
+        android:id="@+id/daily_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Daily Summary: "
+        android:layout_below="@id/add_meal_button"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/weekly_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Weekly Summary: "
+        android:layout_below="@id/daily_summary"
+        android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+</RelativeLayout>

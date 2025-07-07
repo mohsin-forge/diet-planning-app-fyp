@@ -1,0 +1,88 @@
+<!-- res/layout/activity_user_details.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter Your Details"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextHeight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter your height (cm)"
+        android:inputType="number"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextWeight"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter your weight (kg)"
+        android:inputType="number"
+        android:layout_below="@id/editTextHeight"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextAge"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter your age"
+        android:inputType="number"
+        android:layout_below="@id/editTextWeight"
+        android:layout_marginTop="16dp"/>
+
+    <Spinner
+        android:id="@+id/spinnerGender"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/editTextAge"
+        android:layout_marginTop="16dp"
+        android:entries="@array/gender_array" />
+
+    <EditText
+        android:id="@+id/editTextCalorieGoal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter your daily calorie goal"
+        android:inputType="number"
+        android:layout_below="@id/spinnerGender"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextGoal"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Enter your goal"
+        android:inputType="text"
+        android:layout_below="@id/editTextCalorieGoal"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/editTextOtherRequirements"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:hint="Other requirements (optional)"
+        android:inputType="text"
+        android:layout_below="@id/editTextGoal"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSaveDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Details"
+        android:layout_below="@id/editTextOtherRequirements"
+        android:background="@color/primary"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:layout_marginTop="24dp"/>
+</RelativeLayout>

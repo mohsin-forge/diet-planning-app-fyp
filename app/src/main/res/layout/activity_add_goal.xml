@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF"
+    tools:context=".AddGoalActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Set Your Dietary Goals"
+            android:textSize="24sp"
+            android:textColor="@color/primary"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp" />
+
+        <!-- Calorie Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Calories:"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/idCalories"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:hint="Enter daily calories"
+                android:inputType="number"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+        </LinearLayout>
+
+        <!-- Carbohydrates Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Carbs (%):"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/idCarbs"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:hint="Enter carb ratio"
+                android:inputType="number"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+        </LinearLayout>
+
+        <!-- Proteins Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Proteins (%):"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/idProteins"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:hint="Enter protein ratio"
+                android:inputType="number"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+        </LinearLayout>
+
+        <!-- Fats Input -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Fats (%):"
+                android:layout_weight="1"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/idFats"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="2"
+                android:hint="Enter fat ratio"
+                android:inputType="number"
+                android:padding="8dp"
+                android:background="@android:drawable/editbox_background" />
+        </LinearLayout>
+
+        <!-- Dietary Restrictions -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dietary Restrictions"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginTop="16dp" />
+
+        <CheckBox
+            android:id="@+id/checkboxVegetarian"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vegetarian"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <CheckBox
+            android:id="@+id/checkboxGlutenFree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gluten-Free"
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Add more checkboxes as needed -->
+
+        <!-- Save Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonAddGoal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Save Goal"
+            android:layout_marginTop="24dp"
+            android:textAllCaps="false"
+            android:background="@color/primary"
+            android:textColor="@color/white"
+            android:padding="12dp" />
+
+        <!-- Saved Goals Section -->
+        <TextView
+            android:id="@+id/textViewSavedGoalsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Saved Goals"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary"
+            android:layout_marginTop="24dp" />
+
+        <!-- Display Saved Goals -->
+        <TextView
+            android:id="@+id/textViewSavedCalories"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Calories: "
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textViewSavedCarbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Carbs: "
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textViewSavedProteins"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Proteins: "
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <TextView
+            android:id="@+id/textViewSavedFats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fats: "
+            android:textSize="16sp"
+            android:layout_marginTop="8dp" />
+
+        <!-- Display more saved goals as needed -->
+
+    </LinearLayout>
+</ScrollView>

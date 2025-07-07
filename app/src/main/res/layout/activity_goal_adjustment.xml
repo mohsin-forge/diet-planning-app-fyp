@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".goalAdjustmentActivity">
+
+    <TextView
+        android:id="@+id/tvGoalAdjustmentTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Goal Adjustment"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/primary"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tvCurrentGoal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Current Goal: 2000 Calories"
+        android:textSize="18sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="10dp" />
+
+    <EditText
+        android:id="@+id/etNewGoal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Enter new goal (Calories)"
+        android:inputType="number"
+        android:layout_marginBottom="10dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAdjustGoal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adjust Goal"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/rounded_button"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:id="@+id/tvSuggestions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Suggestions: Eat more vegetables, reduce sugar intake"
+        android:textSize="16sp" />
+
+</LinearLayout>

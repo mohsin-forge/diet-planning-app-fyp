@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "733356884640",
+    "project_id": "signup-login-firebase-fff89",
+    "storage_bucket": "signup-login-firebase-fff89.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733356884640:android:5625c21c0fa7f09ab7ffc5",
+        "android_client_info": {
+          "package_name": "com.example.signuploginfirebase"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7Xi30t71Q9DZg_Xs_jnZao4z2s8YxaOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733356884640:android:7870db1d6be43acdb7ffc5",
+        "android_client_info": {
+          "package_name": "tech.demoproject.android_otp_vertification"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7Xi30t71Q9DZg_Xs_jnZao4z2s8YxaOk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

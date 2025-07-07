@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Meal Plan"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@color/primary"
+        android:layout_gravity="center"/>
+
+    <Spinner
+        android:id="@+id/spinnerDay"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:entries="@array/days_of_week"
+        android:layout_marginTop="16dp"/>
+
+    <EditText
+        android:id="@+id/etBreakfast"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Breakfast"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/etLunch"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Lunch"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/etDinner"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Dinner"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/etSnacks"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Snacks"
+        android:layout_marginTop="8dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Plan"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:layout_gravity="center"/>
+
+    <ListView
+        android:id="@+id/lvMealPlans"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"/>
+</LinearLayout>
